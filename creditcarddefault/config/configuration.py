@@ -43,4 +43,4 @@ class Configuartion:
 
 
         except Exception as e:
-            raise HousingException(e,sys) from e
+            raise CreditException(e,sys) from e
