@@ -1,0 +1,150 @@
+columns:
+  LIMIT_BAL: float
+  GENDER: int
+  EDUCATION: int
+  MARRIAGE: int
+  AGE: int
+  PAY_1: int
+  PAY_2: int
+  PAY_3: int
+  PAY_4: int
+  PAY_5: int
+  PAY_6: int
+  BILL_AMT1: float
+  BILL_AMT2: float
+  BILL_AMT3: float
+  BILL_AMT4: float
+  BILL_AMT5: float
+  BILL_AMT6: float
+  PAY_AMT1: float
+  PAY_AMT2: float
+  PAY_AMT3: float
+  PAY_AMT4: float
+  PAY_AMT5: float
+  PAY_AMT6: float
+  DEFAULTS: int
+
+drop:
+  ID: int
+
+numerical_columns:
+  - LIMIT_BAL
+  - AGE
+  - BILL_AMT1
+  - BILL_AMT2
+  - BILL_AMT3
+  - BILL_AMT4
+  - BILL_AMT5
+  - BILL_AMT6
+  - PAY_AMT1
+  - PAY_AMT2
+  - PAY_AMT3
+  - PAY_AMT4
+  - PAY_AMT5
+  - PAY_AMT6
+
+categorical_columns:
+  - GENDER
+  - EDUCATION
+  - MARRIAGE
+  - AGE
+  - PAY_1
+  - PAY_2
+  - PAY_3
+  - PAY_4
+  - PAY_5
+  - PAY_6
+
+target_column: DEFAULTS
+
+domain_value:
+  GENDER:
+    - 1
+    - 2
+
+  EDUCATION:
+    - 1
+    - 2
+    - 3
+    - 4
+
+  MARRIAGE:
+    - 1
+    - 2
+    - 3
+
+  PAY_1:
+    - -1
+    - -2
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+
+  PAY_2:
+    - -1
+    - -2
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+
+  PAY_3:
+    - -1
+    - -2
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+
+  PAY_4:
+    - -1
+    - -2
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+
+  PAY_5:
+    - -1
+    - -2
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+
+  PAY_6:
+    - -1
+    - -2
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+
+  DEFAULTS:
+    - 0
+    - 1
