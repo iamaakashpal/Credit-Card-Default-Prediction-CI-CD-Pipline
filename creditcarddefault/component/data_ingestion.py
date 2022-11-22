@@ -8,6 +8,7 @@ import numpy as np
 from six.moves import urllib
 import pandas as pd
 from sklearn.model_selection import StratifiedShuffleSplit
+from zipfile import ZipFile
 
 class DataIngestion:
 
@@ -52,7 +53,7 @@ class DataIngestion:
             os.makedirs(raw_data_dir,exist_ok=True)
 
             logging.info(f"Extracting tgz file: [{tgz_file_path}] into dir: [{raw_data_dir}]")
-            with tarfile.open(tgz_file_path) as credit_card_tgz_file_obj:
+            with ZipFile.open(tgz_file_path) as credit_card_tgz_file_obj:
                 credit_card_tgz_file_obj.extractall(path=raw_data_dir)
             logging.info(f"Extraction completed")
 
